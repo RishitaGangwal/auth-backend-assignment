@@ -1,6 +1,4 @@
-import axios from "axios";
-
-const BASE_URL = process.env.REACT_APP_API_URL || "http://localhost:8080";
+const BASE_URL = "http://localhost:8080";
 
 export const api = {
   signup: async (data) =>
@@ -43,16 +41,17 @@ export const api = {
     ).json(),
 
   addCard: async (card) => {
-    const res = await fetch(`${BASE_URL}/user/cards`, {
+    const res = await fetch("http://localhost:8080/user/cards", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${localStorage.getItem("token")}`,
       },
       body: JSON.stringify(card),
     });
 
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    if (!res.ok) {
+      throw new Error(`HTTP ${res.status}`);
+    }
 
     try {
       return await res.json();
@@ -63,12 +62,9 @@ export const api = {
 
   getCards: async () => {
     const email = localStorage.getItem("email");
-    const res = await fetch(`${BASE_URL}/user/cards?email=${email}`, {
-      headers: {
-        Authorization: `Bearer ${localStorage.getItem("token")}`,
-      },
-    });
+    const res = await fetch(`${BASE_URL}/user/cards?email=${email}`);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     return await res.json();
   },
 };
+
