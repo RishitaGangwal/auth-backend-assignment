@@ -91,9 +91,13 @@ Authorization: Bearer <token>
 
 ---
 
+---
+
 ## ⚙️ How to run locally
-Clone the repo
+
+### Clone the repo
 git clone https://github.com/your-username/auth-backend-assignment.git
+
 ---
 
 ### Backend setup
