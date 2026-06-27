@@ -107,6 +107,7 @@ Update application.properties:
 Run backend:
 
 mvn spring-boot:run
+
 Backend runs at:
 http://localhost:8080
 
