@@ -92,9 +92,7 @@ Authorization: Bearer <token>
 ---
 
 ## ⚙️ How to run locally
-
-### Clone repo
-
+Clone the repo
 git clone https://github.com/your-username/auth-backend-assignment.git
 ---
 
@@ -106,7 +104,6 @@ Run backend:
 
 mvn spring-boot:run
 Backend runs at:
-
 http://localhost:8080
 
 ---
@@ -120,7 +117,6 @@ npm install
 npm start
 
 Frontend runs at:
-
 http://localhost:3000
 
 ---
