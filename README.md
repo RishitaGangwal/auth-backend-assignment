@@ -91,8 +91,6 @@ Authorization: Bearer <token>
 
 ---
 
----
-
 ## ⚙️ How to run locally
 
 ### Clone the repo
