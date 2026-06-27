@@ -103,17 +103,24 @@ git clone https://github.com/your-username/auth-backend-assignment.git
 Update application.properties:
 
 Run backend:
+
 mvn spring-boot:run
 Backend runs at:
+
 http://localhost:8080
 
 ---
 
 ### Frontend setup
+
 cd client
+
 npm install
+
 npm start
+
 Frontend runs at:
+
 http://localhost:3000
 
 ---
