@@ -191,7 +191,7 @@ Cards:
 
 ## 👩‍💻 Author
 
-Your Name
+Rishita Gangwal
 
 ---
 
